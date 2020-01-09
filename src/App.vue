@@ -58,7 +58,7 @@ export default Vue.extend({
     packets: []
   }),
   mounted: function() {
-    axios.get('/packets.json').then(response => {
+    axios.get('/PoC-Specs/packets.json').then(response => {
       this.packets = response.data
     })
   }

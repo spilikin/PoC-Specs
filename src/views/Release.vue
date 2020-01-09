@@ -104,7 +104,7 @@ export default Vue.extend({
   },
   methods: {
     fetchData () {
-      axios.get('/packets.json').then(response => {
+      axios.get('/PoC-Specs/packets.json').then(response => {
         this.packets = response.data
         this.switchRelease(this.$route.params.version)
       })        
