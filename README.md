@@ -22,5 +22,14 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Push to github pages
+```
+yarn build
+cd dist
+
+git init
+git add -A
+git commit -m 'deploy'
+
+git push -f git@github.com:spilikin/PoC-Specs.git master:gh-pages
+```
